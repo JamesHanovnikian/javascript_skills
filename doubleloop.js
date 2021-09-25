@@ -1,27 +1,87 @@
 // #  1. Use a nested loop to convert an array of number pairs into a single flattened array.
 // #     For example, [[1, 3], [8, 9], [2, 16]] becomes [1, 3, 8, 9, 2, 16].
 
-var numberPairs = [[1, 3], [8, 9], [2, 16]];
-var newArray = [];
-var i = 0;
-while (i < numberPairs.length) {
-  var i2 = 0;
-  while (i2 < numberPairs[i].length) {
+// var numberPairs = [[1, 3], [8, 9], [2, 16]];
+// var newArray = [];
+// var i = 0;
+// while (i < numberPairs.length) {
+//   var i2 = 0;
+//   while (i2 < numberPairs[i].length) {
+//     newArray.push(numberPairs[i][i2]);
+//     i2++;
+//   }
+//   i++;
+// }
 
-  }
-}
+// console.log(newArray);
 
 
 
 // #  2. Use a nested loop with two arrays of strings to create a new array of strings with each string combined.
 // #     For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
 
+// var lettersA = ["a", "b", "c"];
+// var lettersD = ["d", "e", "f", "g"];
+// var newArray = [];
+
+// var i = 0;
+// while (i < lettersA.length) {
+//   var i2 = 0;
+//   while (i2 < lettersD.length) {
+//     newArray.push(lettersA[i] + lettersD[i2]);
+//     i2++;
+//   }
+//   i++;
+// }
+// console.log(newArray);
+
+
+
 // #  3. Use a nested loop with one array of strings to create a new array that contains every combination of each string with every other string in the array.
 // #     For example, ["a", "b", "c", "d"] becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
+
+
+// var letters = ["a", "b", "c", "d"];
+// var newArray = [];
+// var i = 0;
+
+// while (i < letters.length) {
+//   var i2 = 0;
+//   while (i2 < letters.length) {
+//     if (i !== i2) {
+//       newArray.push(letters[i] + letters[i2]);
+
+//     }
+//     i2++;
+//   }
+//   i++;
+// }
+
+// console.log(newArray); 
 
 // #  4. Use a nested loop to find the largest product of any two different numbers within a given array.
 // #     For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
 
+// var numbers = [5, -2, 1, -9, -7, 2, 6];
+
+// var product = 1;
+// var highestProduct = numbers[0] * numbers[1];
+
+// var i = 0;
+// while (i < numbers.length) {
+//   var i2 = 0;
+//   while (i2 < numbers.length) {
+//     if (i !== i2) {
+//       product = numbers[i] * numbers[i2];
+//       if (product > highestProduct) {
+//         highestProduct = product;
+//       }
+//     }
+//     i2++;
+//   }
+//   i++;
+// }
+// console.log(highestProduct);
 // #  5. Use a nested loop to compute the sum of all the numbers in an array of number pairs.
 // #     For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
 
